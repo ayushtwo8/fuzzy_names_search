@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: police-records-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_HOST
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_PORT
+        value: "5432"
+      - key: PORT
+        value: "8080"
+    healthCheckPath: /api/health

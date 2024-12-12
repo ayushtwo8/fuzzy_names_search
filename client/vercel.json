@@ -1,0 +1,15 @@
+{
+    "buildCommand": "npm run build",
+    "outputDirectory": "build",
+    "framework": "create-react-app",
+    "routes": [
+        {
+            "src": "/[^.]+",
+            "dest": "/"
+        }
+    ],
+    "env": {
+        "REACT_APP_API_URL": "https://your-backend-url.onrender.com",
+        "REACT_APP_PYTHON_SERVICE_URL": "https://your-python-service.onrender.com"
+    }
+}
