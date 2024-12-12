@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     python3-dev \
     ffmpeg \
+    libffi-dev \
+    libssl-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements and install Python packages
